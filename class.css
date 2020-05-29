@@ -1,0 +1,200 @@
+@font-face{
+	            
+	           font-family: cifri;
+	           src: url("class.ttf");
+	    }
+	    @font-face{
+	           font-family: kolivan;
+	           src: url("3554.ttf");
+	           
+	          }
+	          .header{
+	          	height: 800px;
+	          	background-size: 100% 100%;
+	          }
+	          
+	          	      .menu-list a:hover {
+	        color:#00ff51; /* Цвет ссылки при наведении на нее курсора мыши */  
+	        font-size: 27px;
+	        font-family: kolivan;
+	      }
+	   
+	    .glav h1{
+	    	margin-left: 100px;
+	    	padding-top: 4px;
+	    	color: white; 
+	    	font-weight: lighter;
+	    }
+		.glav1 a {
+		    display: inline-block;
+		    color: white;
+		    line-height: 1;
+		    text-decoration:none;
+		    cursor: pointer;
+		    font-size: 25px;
+		    margin-top: 14px;
+		    margin-left: 100px;
+		    font-weight: 200;
+		}
+		.glav1 a:after {
+		    background-color: 	#ADFF2F;
+		    display: block;
+		    content: "";
+			height: 2px;
+			margin-top: 10px;
+		    width: 0%;
+		    -webkit-transition: width .3s ease-in-out;
+		    -moz--transition: width .3s ease-in-out;
+		    transition: width .3s ease-in-out;
+		}
+		.glav1 a:hover:after,
+		.glav1 a:focus:after {
+		    width: 100%;
+		}
+		.wrapper {
+		  position: relative;
+		  overflow-x: hidden;
+		}
+		.menu {
+		  position: fixed;
+		  left: 0;
+		  top: 0;
+		  z-index: 99;
+		  width: 15%;
+		  height: 100vh;
+		  display: flex;
+		  background-color: black;
+		  transition: 0.6s;
+		  transform: translateX(-100%);
+		   font-family: kolivan;
+
+
+		}
+		.menu_active {
+		  transform: translateX(0%);
+		  background: #0567a3;
+		}
+		.menu-list {
+		  display: flex;
+		  justify-content: space-around;
+		  height: 50%;
+		  flex-direction: column;
+		
+		}
+		.menu-list a {
+		  text-decoration: none;
+		  text-transform: 
+		  font-weight: 100;
+		  transition: all 0.2s ease;
+	      -webkit-transition: all 0.2s ease;
+	      -moz-transition: all 0.2s ease;
+	      -o-transition: all 0.2s ease;
+	      -ms-transition: all 0.2s ease;
+	      text-decoration: none;
+	      font-family: kolivan;
+	      margin-left: 40px;
+	        margin-top: 10px;
+	        font-size: 20px;
+	        color: white;
+	        font-weight: 200;
+	         text-shadow: black 0 0 8px;
+		}
+		.menu-btn {
+		  width: 100px;
+		  height: 100px;
+		  position: absolute;
+		  right: -100px;
+		  top:200px;
+		}
+		.content {
+		  transition: 0.5s;
+		  position: relative;
+		  z-index: 0;
+		}
+		.content_active {
+		  transform: translateX(30%);
+		}
+	
+		.texts h2{
+			font-size: 50px;
+			
+			
+		}
+		.logo{
+			border-radius: 100px; /* Радиус скругления * /* Параметры рамки */
+    		box-shadow: 0 0 7px #666;
+    		margin-top: 1px;
+		}
+		.prie h1{
+			margin-right: auto;
+			color: white;
+			font-weight: normal;
+			font-weight: lighter;
+			margin-bottom: 50px;			
+		}
+		.prie h3{
+			font-weight:lighter;
+			color: white;
+
+		}
+		.prieka{
+			justify-content: space-between;
+  			align-content: space-around;
+  			text-align: center;
+  			margin-bottom: 250px;
+		}
+							/* Dropdown Button */
+			.dropbtn {
+
+			    color: white;
+
+			    border: none;text-decoration:none;
+			}
+
+			/* The container <div> - needed to position the dropdown content */
+			.dropdown {
+			 display: inline-block;
+		    color: white;
+		    line-height: 1;
+		    text-decoration:none;
+		    cursor: pointer;
+		    font-size: 25px;
+		    margin-top: 14px;
+		    margin-left: 100px;
+		    font-weight: 200;
+			}
+
+			/* Dropdown Content (Hidden by Default) */
+			.dropdown-content {
+			    display: none;
+			    position: absolute;
+			    background-color: #f1f1f1;
+		    	font-size: 25px;
+			    z-index: 1;
+			    text-decoration:none;
+			    min-width: 160px;
+			}
+
+			/* Links inside the dropdown */
+			.dropdown-content a {
+				margin-left: 10px;
+			    color: black;
+			    text-decoration: none;
+			    display: block;
+			    display: inline-block;
+			    line-height: 1;
+			    text-decoration:none;
+			    cursor: pointer;
+			    font-size: 15px;
+		    	margin-top: 20px;
+		    	font-weight: 200;
+			}
+
+			/* Change color of dropdown links on hover */
+			.dropdown-content a:hover {background-color: #ddd;}
+
+			/* Show the dropdown menu on hover */
+			.dropdown:hover .dropdown-content {display: block;}
+
+			/* Change the background color of the dropdown button when the dropdown content is shown */
+			.dropdown:hover .dropbtn {text-decoration: none;}
